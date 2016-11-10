@@ -10,4 +10,5 @@
 
 @interface UIColor (ZgyExtension)
 + (UIColor *)colorWithr:(CGFloat)r g:(CGFloat)g b:(CGFloat)b a:(CGFloat)a;
++ (UIColor *)grayColorWithRGB:(CGFloat)rgb a:(CGFloat)a;
 @end

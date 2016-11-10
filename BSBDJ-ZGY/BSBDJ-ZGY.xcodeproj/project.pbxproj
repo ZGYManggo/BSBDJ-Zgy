@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A487369FE83DD3D1C56A8BFB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA01097B22433289FB9A077E /* libPods.a */; };
+		FE42BECA1DD2CA0B00944783 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BEC91DD2CA0B00944783 /* main.m */; };
+		FE42BECD1DD2CA0B00944783 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BECC1DD2CA0B00944783 /* AppDelegate.m */; };
+		FE42BED31DD2CA0B00944783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE42BED11DD2CA0B00944783 /* Main.storyboard */; };
+		FE42BED51DD2CA0B00944783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE42BED41DD2CA0B00944783 /* Assets.xcassets */; };
+		FE42BED81DD2CA0B00944783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE42BED61DD2CA0B00944783 /* LaunchScreen.storyboard */; };
+		FE42BF001DD2D1F400944783 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BEFF1DD2D1F400944783 /* MainTabBarController.m */; };
+		FE42BF031DD2D5D300944783 /* MainTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF021DD2D5D300944783 /* MainTabBar.m */; };
+		FE42BF061DD2D6A400944783 /* MainNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF051DD2D6A400944783 /* MainNavController.m */; };
+		FE42BF091DD30F5D00944783 /* UIView+ZgyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF081DD30F5D00944783 /* UIView+ZgyExtension.m */; };
+		FE42BF0C1DD3237E00944783 /* PublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF0B1DD3237E00944783 /* PublishViewController.m */; };
+		FE42BF0F1DD325CF00944783 /* UIColor+ZgyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF0E1DD325CF00944783 /* UIColor+ZgyExtension.m */; };
+		FE42BF121DD419B200944783 /* ZgItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF111DD419B200944783 /* ZgItemButton.m */; };
+		FE42BF151DD41CEC00944783 /* ZgItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF141DD41CEC00944783 /* ZgItemModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		65FCB4EA475A32D85B197489 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		DA01097B22433289FB9A077E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E580D7CA41A39F15686B91D9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FE42BEC51DD2CA0B00944783 /* BSBDJ-ZGY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BSBDJ-ZGY.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE42BEC91DD2CA0B00944783 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE42BECB1DD2CA0B00944783 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FE42BECC1DD2CA0B00944783 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FE42BED21DD2CA0B00944783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE42BED41DD2CA0B00944783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE42BED71DD2CA0B00944783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE42BED91DD2CA0B00944783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE42BEFE1DD2D1F400944783 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		FE42BEFF1DD2D1F400944783 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		FE42BF011DD2D5D300944783 /* MainTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBar.h; sourceTree = "<group>"; };
+		FE42BF021DD2D5D300944783 /* MainTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBar.m; sourceTree = "<group>"; };
+		FE42BF041DD2D6A400944783 /* MainNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavController.h; sourceTree = "<group>"; };
+		FE42BF051DD2D6A400944783 /* MainNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavController.m; sourceTree = "<group>"; };
+		FE42BF071DD30F5D00944783 /* UIView+ZgyExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZgyExtension.h"; sourceTree = "<group>"; };
+		FE42BF081DD30F5D00944783 /* UIView+ZgyExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZgyExtension.m"; sourceTree = "<group>"; };
+		FE42BF0A1DD3237E00944783 /* PublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishViewController.h; sourceTree = "<group>"; };
+		FE42BF0B1DD3237E00944783 /* PublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishViewController.m; sourceTree = "<group>"; };
+		FE42BF0D1DD325CF00944783 /* UIColor+ZgyExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZgyExtension.h"; sourceTree = "<group>"; };
+		FE42BF0E1DD325CF00944783 /* UIColor+ZgyExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZgyExtension.m"; sourceTree = "<group>"; };
+		FE42BF101DD419B200944783 /* ZgItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZgItemButton.h; sourceTree = "<group>"; };
+		FE42BF111DD419B200944783 /* ZgItemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZgItemButton.m; sourceTree = "<group>"; };
+		FE42BF131DD41CEC00944783 /* ZgItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZgItemModel.h; sourceTree = "<group>"; };
+		FE42BF141DD41CEC00944783 /* ZgItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZgItemModel.m; sourceTree = "<group>"; };
+		FE42BF161DD4202D00944783 /* BSBDJ-ZGY-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BSBDJ-ZGY-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE42BEC21DD2CA0B00944783 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A487369FE83DD3D1C56A8BFB /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C58C0C00B72559BF550924E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA01097B22433289FB9A077E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD429368D415F89C22F1B19B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E580D7CA41A39F15686B91D9 /* Pods.debug.xcconfig */,
+				65FCB4EA475A32D85B197489 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE42BEBC1DD2CA0B00944783 = {
+			isa = PBXGroup;
+			children = (
+				FE42BEC71DD2CA0B00944783 /* BSBDJ-ZGY */,
+				FE42BEC61DD2CA0B00944783 /* Products */,
+				DD429368D415F89C22F1B19B /* Pods */,
+				1C58C0C00B72559BF550924E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FE42BEC61DD2CA0B00944783 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE42BEC51DD2CA0B00944783 /* BSBDJ-ZGY.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE42BEC71DD2CA0B00944783 /* BSBDJ-ZGY */ = {
+			isa = PBXGroup;
+			children = (
+				FE42BEE51DD2D1A900944783 /* Comment-评论 */,
+				FE42BEE91DD2D1A900944783 /* Essence-精华 */,
+				FE42BEED1DD2D1A900944783 /* Follow-关注 */,
+				FE42BEF11DD2D1A900944783 /* Me-我 */,
+				FE42BEF51DD2D1A900944783 /* new-新帖 */,
+				FE42BEF91DD2D1A900944783 /* Other-其他 */,
+				FE42BED11DD2CA0B00944783 /* Main.storyboard */,
+				FE42BEC81DD2CA0B00944783 /* Supporting Files */,
+			);
+			path = "BSBDJ-ZGY";
+			sourceTree = "<group>";
+		};
+		FE42BEC81DD2CA0B00944783 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE42BF161DD4202D00944783 /* BSBDJ-ZGY-Prefix.pch */,
+				FE42BECB1DD2CA0B00944783 /* AppDelegate.h */,
+				FE42BECC1DD2CA0B00944783 /* AppDelegate.m */,
+				FE42BED61DD2CA0B00944783 /* LaunchScreen.storyboard */,
+				FE42BED41DD2CA0B00944783 /* Assets.xcassets */,
+				FE42BED91DD2CA0B00944783 /* Info.plist */,
+				FE42BEC91DD2CA0B00944783 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE42BEE51DD2D1A900944783 /* Comment-评论 */ = {
+			isa = PBXGroup;
+			children = (
+				FE42BEE61DD2D1A900944783 /* Controller */,
+				FE42BEE71DD2D1A900944783 /* Model */,
+				FE42BEE81DD2D1A900944783 /* View */,
+			);
+			path = "Comment-评论";
+			sourceTree = "<group>";
+		};
+		FE42BEE61DD2D1A900944783 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE42BEE71DD2D1A900944783 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE42BEE81DD2D1A900944783 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE42BEE91DD2D1A900944783 /* Essence-精华 */ = {
+			isa = PBXGroup;
+			children = (
+				FE42BEEA1DD2D1A900944783 /* Controller */,
+				FE42BEEB1DD2D1A900944783 /* Model */,
+				FE42BEEC1DD2D1A900944783 /* View */,
+			);
+			path = "Essence-精华";
+			sourceTree = "<group>";
+		};
+		FE42BEEA1DD2D1A900944783 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE42BEEB1DD2D1A900944783 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE42BEEC1DD2D1A900944783 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE42BEED1DD2D1A900944783 /* Follow-关注 */ = {
+			isa = PBXGroup;
+			children = (
+				FE42BEEE1DD2D1A900944783 /* Controller */,
+				FE42BEEF1DD2D1A900944783 /* Model */,
+				FE42BEF01DD2D1A900944783 /* View */,
+			);
+			path = "Follow-关注";
+			sourceTree = "<group>";
+		};
+		FE42BEEE1DD2D1A900944783 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE42BEEF1DD2D1A900944783 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE42BEF01DD2D1A900944783 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE42BEF11DD2D1A900944783 /* Me-我 */ = {
+			isa = PBXGroup;
+			children = (
+				FE42BEF21DD2D1A900944783 /* Controller */,
+				FE42BEF31DD2D1A900944783 /* Model */,
+				FE42BEF41DD2D1A900944783 /* View */,
+			);
+			path = "Me-我";
+			sourceTree = "<group>";
+		};
+		FE42BEF21DD2D1A900944783 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE42BEF31DD2D1A900944783 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE42BEF41DD2D1A900944783 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE42BEF51DD2D1A900944783 /* new-新帖 */ = {
+			isa = PBXGroup;
+			children = (
+				FE42BEF61DD2D1A900944783 /* Controller */,
+				FE42BEF71DD2D1A900944783 /* Model */,
+				FE42BEF81DD2D1A900944783 /* View */,
+			);
+			path = "new-新帖";
+			sourceTree = "<group>";
+		};
+		FE42BEF61DD2D1A900944783 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE42BEF71DD2D1A900944783 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE42BEF81DD2D1A900944783 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE42BEF91DD2D1A900944783 /* Other-其他 */ = {
+			isa = PBXGroup;
+			children = (
+				FE42BEFA1DD2D1A900944783 /* category */,
+				FE42BEFB1DD2D1A900944783 /* Controller */,
+				FE42BEFC1DD2D1A900944783 /* Model */,
+				FE42BEFD1DD2D1A900944783 /* View */,
+			);
+			path = "Other-其他";
+			sourceTree = "<group>";
+		};
+		FE42BEFA1DD2D1A900944783 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				FE42BF071DD30F5D00944783 /* UIView+ZgyExtension.h */,
+				FE42BF081DD30F5D00944783 /* UIView+ZgyExtension.m */,
+				FE42BF0D1DD325CF00944783 /* UIColor+ZgyExtension.h */,
+				FE42BF0E1DD325CF00944783 /* UIColor+ZgyExtension.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		FE42BEFB1DD2D1A900944783 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE42BEFE1DD2D1F400944783 /* MainTabBarController.h */,
+				FE42BEFF1DD2D1F400944783 /* MainTabBarController.m */,
+				FE42BF041DD2D6A400944783 /* MainNavController.h */,
+				FE42BF051DD2D6A400944783 /* MainNavController.m */,
+				FE42BF0A1DD3237E00944783 /* PublishViewController.h */,
+				FE42BF0B1DD3237E00944783 /* PublishViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE42BEFC1DD2D1A900944783 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE42BF131DD41CEC00944783 /* ZgItemModel.h */,
+				FE42BF141DD41CEC00944783 /* ZgItemModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE42BEFD1DD2D1A900944783 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE42BF011DD2D5D300944783 /* MainTabBar.h */,
+				FE42BF021DD2D5D300944783 /* MainTabBar.m */,
+				FE42BF101DD419B200944783 /* ZgItemButton.h */,
+				FE42BF111DD419B200944783 /* ZgItemButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE42BEC41DD2CA0B00944783 /* BSBDJ-ZGY */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE42BEDC1DD2CA0B00944783 /* Build configuration list for PBXNativeTarget "BSBDJ-ZGY" */;
+			buildPhases = (
+				E440DB077071FB8EDD2978A0 /* Check Pods Manifest.lock */,
+				FE42BEC11DD2CA0B00944783 /* Sources */,
+				FE42BEC21DD2CA0B00944783 /* Frameworks */,
+				FE42BEC31DD2CA0B00944783 /* Resources */,
+				9BF7B11C14B5F08187C2F108 /* Embed Pods Frameworks */,
+				B6D585CDE5EE02B9DAB96DB9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BSBDJ-ZGY";
+			productName = "BSBDJ-ZGY";
+			productReference = FE42BEC51DD2CA0B00944783 /* BSBDJ-ZGY.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE42BEBD1DD2CA0B00944783 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "张高远";
+				TargetAttributes = {
+					FE42BEC41DD2CA0B00944783 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FE42BEC01DD2CA0B00944783 /* Build configuration list for PBXProject "BSBDJ-ZGY" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE42BEBC1DD2CA0B00944783;
+			productRefGroup = FE42BEC61DD2CA0B00944783 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE42BEC41DD2CA0B00944783 /* BSBDJ-ZGY */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE42BEC31DD2CA0B00944783 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE42BED81DD2CA0B00944783 /* LaunchScreen.storyboard in Resources */,
+				FE42BED51DD2CA0B00944783 /* Assets.xcassets in Resources */,
+				FE42BED31DD2CA0B00944783 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BF7B11C14B5F08187C2F108 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6D585CDE5EE02B9DAB96DB9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E440DB077071FB8EDD2978A0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE42BEC11DD2CA0B00944783 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE42BF0F1DD325CF00944783 /* UIColor+ZgyExtension.m in Sources */,
+				FE42BF151DD41CEC00944783 /* ZgItemModel.m in Sources */,
+				FE42BF031DD2D5D300944783 /* MainTabBar.m in Sources */,
+				FE42BF001DD2D1F400944783 /* MainTabBarController.m in Sources */,
+				FE42BECD1DD2CA0B00944783 /* AppDelegate.m in Sources */,
+				FE42BF0C1DD3237E00944783 /* PublishViewController.m in Sources */,
+				FE42BECA1DD2CA0B00944783 /* main.m in Sources */,
+				FE42BF121DD419B200944783 /* ZgItemButton.m in Sources */,
+				FE42BF061DD2D6A400944783 /* MainNavController.m in Sources */,
+				FE42BF091DD30F5D00944783 /* UIView+ZgyExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FE42BED11DD2CA0B00944783 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE42BED21DD2CA0B00944783 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE42BED61DD2CA0B00944783 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE42BED71DD2CA0B00944783 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE42BEDA1DD2CA0B00944783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BSBDJ-ZGY/BSBDJ-ZGY-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FE42BEDB1DD2CA0B00944783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BSBDJ-ZGY/BSBDJ-ZGY-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE42BEDD1DD2CA0B00944783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E580D7CA41A39F15686B91D9 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "BSBDJ-ZGY/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zgy.BSBDJ-ZGY";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FE42BEDE1DD2CA0B00944783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65FCB4EA475A32D85B197489 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "BSBDJ-ZGY/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zgy.BSBDJ-ZGY";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE42BEC01DD2CA0B00944783 /* Build configuration list for PBXProject "BSBDJ-ZGY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE42BEDA1DD2CA0B00944783 /* Debug */,
+				FE42BEDB1DD2CA0B00944783 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE42BEDC1DD2CA0B00944783 /* Build configuration list for PBXNativeTarget "BSBDJ-ZGY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE42BEDD1DD2CA0B00944783 /* Debug */,
+				FE42BEDE1DD2CA0B00944783 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE42BEBD1DD2CA0B00944783 /* Project object */;
+}

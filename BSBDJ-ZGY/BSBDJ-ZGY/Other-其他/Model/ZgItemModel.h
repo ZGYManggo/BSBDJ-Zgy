@@ -11,5 +11,9 @@
 @interface ZgItemModel : NSObject
 @property (nonatomic,copy) NSString *title;
 @property (nonatomic,strong) UIImage *image;
+@property (nonatomic,strong) UIImage *heightImage;
+
 + (instancetype)zgItemWithTitle:(NSString *)title imageStr:(NSString *)imageStr;
++ (instancetype)zgItemWithTitle:(NSString *)title imageStr:(NSString *)imageStr heightImage:(NSString *)heightImageStr;
+
 @end

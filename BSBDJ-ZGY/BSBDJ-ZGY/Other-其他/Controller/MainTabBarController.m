@@ -9,6 +9,11 @@
 #import "mainTabBarController.h"
 #import "MainNavController.h"
 #import "mainTabBar.h"
+#import "MeViewController.h"
+#import "NewPostsViewController.h"
+#import "FollowViewController.h"
+#import "EssenceViewController.h"
+#import "CommentViewController.h"
 @interface MainTabBarController ()
 
 @end
@@ -28,19 +33,10 @@
     selectedAttrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
     [tabBarItem setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
     
-    UIViewController *vc1 = [UIViewController new];
-    vc1.view.backgroundColor = [UIColor whiteColor];
-    UIViewController *vc2 = [UIViewController new];
-    vc2.view.backgroundColor = [UIColor grayColor];
-
-    UIViewController *vc3 = [UIViewController new];
-    vc3.view.backgroundColor = [UIColor greenColor];
-
-    UIViewController *vc4 = [UIViewController new];
-    vc4.view.backgroundColor = [UIColor redColor];
-
-    UIViewController *vc5 = [UIViewController new];
-    vc5.view.backgroundColor = [UIColor blueColor];
+    UIViewController *vc1 = [EssenceViewController new];
+    UIViewController *vc2 = [NewPostsViewController new];
+    UIViewController *vc3 = [FollowViewController new];
+    UIViewController *vc4 = [MeViewController new];
 
     
     [self setValue:[[MainTabBar alloc]init] forKeyPath:@"tabBar"];

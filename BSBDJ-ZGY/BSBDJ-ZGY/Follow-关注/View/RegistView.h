@@ -1,5 +1,5 @@
 //
-//  ZgItemButton.h
+//  RegistView.h
 //  BSBDJ-ZGY
 //
 //  Created by jiemo on 16/11/10.
@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Masonry.h>
 
-@interface ZgItemButton : UIButton
-- (void)addAnimation;
+@interface RegistView : UIView
+
 @end

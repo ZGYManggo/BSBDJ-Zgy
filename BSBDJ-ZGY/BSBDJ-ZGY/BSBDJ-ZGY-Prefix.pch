@@ -11,6 +11,12 @@
 
 
 #ifdef __OBJC__
+
+#import "UIView+ZgyExtension.h"
+#import "UIColor+ZgyExtension.h"
+//weak self
+#define WEAKSELF(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
 // 系统版本与APP版本宏
 #define SYS_VER [[[UIDevice currentDevice] systemVersion] floatValue]
 #define APP_VERSION [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleShortVersionString"]
@@ -18,13 +24,6 @@
 // 界面
 #define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
-#define CONTROLLER_WIDTH self.view.bounds.size.width
-#define CONTROLLER_HEIGHT self.view.bounds.size.height
-#define VIEW_WIDTH self.bounds.size.width
-#define VIEW_HEIGHT self.bounds.size.height
-
-
-
 
 // 输出日志
 #define ZGLogfunc CLLog(@"%s",__func__);

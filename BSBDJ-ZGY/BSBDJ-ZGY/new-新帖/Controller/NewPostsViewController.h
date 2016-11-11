@@ -1,5 +1,5 @@
 //
-//  ZgItemButton.h
+//  NewPostsViewController.h
 //  BSBDJ-ZGY
 //
 //  Created by jiemo on 16/11/10.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZgItemButton : UIButton
-- (void)addAnimation;
+@interface NewPostsViewController : UIViewController
+
 @end

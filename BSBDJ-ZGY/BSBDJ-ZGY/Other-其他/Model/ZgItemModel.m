@@ -16,6 +16,11 @@
     model.image = [UIImage imageNamed:imageStr];
     return model;
 }
-
++ (instancetype)zgItemWithTitle:(NSString *)title imageStr:(NSString *)imageStr heightImage:(NSString *)heightImageStr{
+    
+    ZgItemModel *model = [self zgItemWithTitle:title imageStr:imageStr];
+    model.heightImage = [UIImage imageNamed:imageStr];
+    return model;
+}
 
 @end

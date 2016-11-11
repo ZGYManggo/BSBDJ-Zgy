@@ -28,4 +28,40 @@
     [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 }
 
+- (void)addAnimation{
+    [self addTarget:self action:@selector(tappedDown) forControlEvents:UIControlEventTouchDown];
+    [self addTarget:self action:@selector(tappedUp) forControlEvents:UIControlEventTouchDown];
+
+}
+
+- (void)tappedDown{
+    [UIView animateWithDuration:0.25 animations:^{
+        self.transform = CGAffineTransformMakeScale(1.2, 1.2);
+    }];
+
+}
+
+- (void)tappedUp{
+    [UIView animateWithDuration:0.25 animations:^{
+        self.transform = CGAffineTransformMakeScale(2, 2);
+        self.alpha = 0;
+    }];
+}
+
+-(void)layoutSubviews
+{
+    [super layoutSubviews];
+    CGFloat imageW = self.bounds.size.width;
+    CGFloat imageH = self.bounds.size.height * 0.8;
+    CGFloat imageX = 0;
+    CGFloat imageY = 0;
+    self.imageView.frame = CGRectMake(imageX, imageY, imageW, imageH);
+    
+    CGFloat titleW = imageW;
+    CGFloat titleH = self.bounds.size.height - imageH;
+    CGFloat titleX = imageX;
+    CGFloat titleY = imageH;
+    self.titleLabel.frame = CGRectMake(titleX, titleY, titleW, titleH);
+    
+}
 @end

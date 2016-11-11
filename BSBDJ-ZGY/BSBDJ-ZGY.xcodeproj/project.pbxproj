@@ -21,6 +21,16 @@
 		FE42BF0F1DD325CF00944783 /* UIColor+ZgyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF0E1DD325CF00944783 /* UIColor+ZgyExtension.m */; };
 		FE42BF121DD419B200944783 /* ZgItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF111DD419B200944783 /* ZgItemButton.m */; };
 		FE42BF151DD41CEC00944783 /* ZgItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF141DD41CEC00944783 /* ZgItemModel.m */; };
+		FE42BF191DD45A2900944783 /* FollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF181DD45A2900944783 /* FollowViewController.m */; };
+		FE42BF1C1DD45A8B00944783 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF1B1DD45A8B00944783 /* MeViewController.m */; };
+		FE42BF251DD45AF900944783 /* NewPostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF241DD45AF900944783 /* NewPostsViewController.m */; };
+		FE42BF281DD45B0B00944783 /* EssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF271DD45B0B00944783 /* EssenceViewController.m */; };
+		FE42BF2B1DD45B1900944783 /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF2A1DD45B1900944783 /* CommentViewController.m */; };
+		FE42BF2E1DD465C700944783 /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF2D1DD465C700944783 /* RegistViewController.m */; };
+		FE42BF311DD4713700944783 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF301DD4713700944783 /* LoginView.m */; };
+		FE42BF341DD47C7500944783 /* RegistView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF331DD47C7500944783 /* RegistView.m */; };
+		FE42BF3A1DD55D5500944783 /* UITextField+ZgyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF391DD55D5500944783 /* UITextField+ZgyExtension.m */; };
+		FE42BF3D1DD560BC00944783 /* RegistLoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF3C1DD560BC00944783 /* RegistLoginTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +62,26 @@
 		FE42BF131DD41CEC00944783 /* ZgItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZgItemModel.h; sourceTree = "<group>"; };
 		FE42BF141DD41CEC00944783 /* ZgItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZgItemModel.m; sourceTree = "<group>"; };
 		FE42BF161DD4202D00944783 /* BSBDJ-ZGY-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BSBDJ-ZGY-Prefix.pch"; sourceTree = "<group>"; };
+		FE42BF171DD45A2900944783 /* FollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowViewController.h; sourceTree = "<group>"; };
+		FE42BF181DD45A2900944783 /* FollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowViewController.m; sourceTree = "<group>"; };
+		FE42BF1A1DD45A8B00944783 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		FE42BF1B1DD45A8B00944783 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		FE42BF231DD45AF900944783 /* NewPostsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPostsViewController.h; sourceTree = "<group>"; };
+		FE42BF241DD45AF900944783 /* NewPostsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPostsViewController.m; sourceTree = "<group>"; };
+		FE42BF261DD45B0B00944783 /* EssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssenceViewController.h; sourceTree = "<group>"; };
+		FE42BF271DD45B0B00944783 /* EssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssenceViewController.m; sourceTree = "<group>"; };
+		FE42BF291DD45B1900944783 /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
+		FE42BF2A1DD45B1900944783 /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
+		FE42BF2C1DD465C700944783 /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
+		FE42BF2D1DD465C700944783 /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
+		FE42BF2F1DD4713700944783 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		FE42BF301DD4713700944783 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		FE42BF321DD47C7500944783 /* RegistView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistView.h; sourceTree = "<group>"; };
+		FE42BF331DD47C7500944783 /* RegistView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistView.m; sourceTree = "<group>"; };
+		FE42BF381DD55D5500944783 /* UITextField+ZgyExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+ZgyExtension.h"; sourceTree = "<group>"; };
+		FE42BF391DD55D5500944783 /* UITextField+ZgyExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ZgyExtension.m"; sourceTree = "<group>"; };
+		FE42BF3B1DD560BC00944783 /* RegistLoginTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistLoginTextField.h; sourceTree = "<group>"; };
+		FE42BF3C1DD560BC00944783 /* RegistLoginTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistLoginTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +173,8 @@
 		FE42BEE61DD2D1A900944783 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FE42BF291DD45B1900944783 /* CommentViewController.h */,
+				FE42BF2A1DD45B1900944783 /* CommentViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,6 +206,8 @@
 		FE42BEEA1DD2D1A900944783 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FE42BF261DD45B0B00944783 /* EssenceViewController.h */,
+				FE42BF271DD45B0B00944783 /* EssenceViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -205,6 +239,10 @@
 		FE42BEEE1DD2D1A900944783 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FE42BF171DD45A2900944783 /* FollowViewController.h */,
+				FE42BF181DD45A2900944783 /* FollowViewController.m */,
+				FE42BF2C1DD465C700944783 /* RegistViewController.h */,
+				FE42BF2D1DD465C700944783 /* RegistViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -219,6 +257,12 @@
 		FE42BEF01DD2D1A900944783 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FE42BF2F1DD4713700944783 /* LoginView.h */,
+				FE42BF301DD4713700944783 /* LoginView.m */,
+				FE42BF321DD47C7500944783 /* RegistView.h */,
+				FE42BF331DD47C7500944783 /* RegistView.m */,
+				FE42BF3B1DD560BC00944783 /* RegistLoginTextField.h */,
+				FE42BF3C1DD560BC00944783 /* RegistLoginTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,6 +280,8 @@
 		FE42BEF21DD2D1A900944783 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FE42BF1A1DD45A8B00944783 /* MeViewController.h */,
+				FE42BF1B1DD45A8B00944783 /* MeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -267,6 +313,8 @@
 		FE42BEF61DD2D1A900944783 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FE42BF231DD45AF900944783 /* NewPostsViewController.h */,
+				FE42BF241DD45AF900944783 /* NewPostsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -303,6 +351,8 @@
 				FE42BF081DD30F5D00944783 /* UIView+ZgyExtension.m */,
 				FE42BF0D1DD325CF00944783 /* UIColor+ZgyExtension.h */,
 				FE42BF0E1DD325CF00944783 /* UIColor+ZgyExtension.m */,
+				FE42BF381DD55D5500944783 /* UITextField+ZgyExtension.h */,
+				FE42BF391DD55D5500944783 /* UITextField+ZgyExtension.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -463,14 +513,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE42BF0F1DD325CF00944783 /* UIColor+ZgyExtension.m in Sources */,
+				FE42BF3D1DD560BC00944783 /* RegistLoginTextField.m in Sources */,
+				FE42BF191DD45A2900944783 /* FollowViewController.m in Sources */,
+				FE42BF341DD47C7500944783 /* RegistView.m in Sources */,
 				FE42BF151DD41CEC00944783 /* ZgItemModel.m in Sources */,
 				FE42BF031DD2D5D300944783 /* MainTabBar.m in Sources */,
 				FE42BF001DD2D1F400944783 /* MainTabBarController.m in Sources */,
+				FE42BF281DD45B0B00944783 /* EssenceViewController.m in Sources */,
 				FE42BECD1DD2CA0B00944783 /* AppDelegate.m in Sources */,
+				FE42BF311DD4713700944783 /* LoginView.m in Sources */,
+				FE42BF3A1DD55D5500944783 /* UITextField+ZgyExtension.m in Sources */,
+				FE42BF1C1DD45A8B00944783 /* MeViewController.m in Sources */,
 				FE42BF0C1DD3237E00944783 /* PublishViewController.m in Sources */,
+				FE42BF2B1DD45B1900944783 /* CommentViewController.m in Sources */,
+				FE42BF251DD45AF900944783 /* NewPostsViewController.m in Sources */,
 				FE42BECA1DD2CA0B00944783 /* main.m in Sources */,
 				FE42BF121DD419B200944783 /* ZgItemButton.m in Sources */,
 				FE42BF061DD2D6A400944783 /* MainNavController.m in Sources */,
+				FE42BF2E1DD465C700944783 /* RegistViewController.m in Sources */,
 				FE42BF091DD30F5D00944783 /* UIView+ZgyExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

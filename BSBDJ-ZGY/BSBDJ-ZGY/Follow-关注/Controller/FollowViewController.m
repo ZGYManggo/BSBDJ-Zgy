@@ -8,6 +8,7 @@
 
 #import "FollowViewController.h"
 #import "RegistViewController.h"
+#import "UIBarButtonItem+ZgyExtension.h"
 #import <Masonry.h>
 @interface FollowViewController ()
 
@@ -19,6 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"我的关注";
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" HeightImage:@"friendsRecommentIcon-click"Target:self action:@selector(tappedBarButton)];
     self.view.backgroundColor = [UIColor grayColorWithRGB:206 a:1];
     UIImageView *icon = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"header_cry_icon"]];
     [icon sizeToFit];

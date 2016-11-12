@@ -7,7 +7,7 @@
 //
 
 #import "NewPostsViewController.h"
-
+#import "UIBarButtonItem+ZgyExtension.h"
 @interface NewPostsViewController ()
 
 @end
@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" HeightImage:@"MainTagSubIconClick"Target:self action:@selector(tappedBarButton)];
 }
 
 - (void)didReceiveMemoryWarning {

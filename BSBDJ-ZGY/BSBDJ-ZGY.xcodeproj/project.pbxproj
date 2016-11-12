@@ -31,6 +31,7 @@
 		FE42BF341DD47C7500944783 /* RegistView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF331DD47C7500944783 /* RegistView.m */; };
 		FE42BF3A1DD55D5500944783 /* UITextField+ZgyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF391DD55D5500944783 /* UITextField+ZgyExtension.m */; };
 		FE42BF3D1DD560BC00944783 /* RegistLoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF3C1DD560BC00944783 /* RegistLoginTextField.m */; };
+		FE42BF401DD565F800944783 /* UIBarButtonItem+ZgyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF3F1DD565F800944783 /* UIBarButtonItem+ZgyExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,8 @@
 		FE42BF391DD55D5500944783 /* UITextField+ZgyExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ZgyExtension.m"; sourceTree = "<group>"; };
 		FE42BF3B1DD560BC00944783 /* RegistLoginTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistLoginTextField.h; sourceTree = "<group>"; };
 		FE42BF3C1DD560BC00944783 /* RegistLoginTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistLoginTextField.m; sourceTree = "<group>"; };
+		FE42BF3E1DD565F800944783 /* UIBarButtonItem+ZgyExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ZgyExtension.h"; sourceTree = "<group>"; };
+		FE42BF3F1DD565F800944783 /* UIBarButtonItem+ZgyExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ZgyExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,6 +356,8 @@
 				FE42BF0E1DD325CF00944783 /* UIColor+ZgyExtension.m */,
 				FE42BF381DD55D5500944783 /* UITextField+ZgyExtension.h */,
 				FE42BF391DD55D5500944783 /* UITextField+ZgyExtension.m */,
+				FE42BF3E1DD565F800944783 /* UIBarButtonItem+ZgyExtension.h */,
+				FE42BF3F1DD565F800944783 /* UIBarButtonItem+ZgyExtension.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -529,6 +534,7 @@
 				FE42BF251DD45AF900944783 /* NewPostsViewController.m in Sources */,
 				FE42BECA1DD2CA0B00944783 /* main.m in Sources */,
 				FE42BF121DD419B200944783 /* ZgItemButton.m in Sources */,
+				FE42BF401DD565F800944783 /* UIBarButtonItem+ZgyExtension.m in Sources */,
 				FE42BF061DD2D6A400944783 /* MainNavController.m in Sources */,
 				FE42BF2E1DD465C700944783 /* RegistViewController.m in Sources */,
 				FE42BF091DD30F5D00944783 /* UIView+ZgyExtension.m in Sources */,

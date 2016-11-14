@@ -14,6 +14,7 @@
 
 #import "UIView+ZgyExtension.h"
 #import "UIColor+ZgyExtension.h"
+#import "Const.h"
 //weak self
 #define WEAKSELF(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 

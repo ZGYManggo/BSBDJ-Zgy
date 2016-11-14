@@ -7,7 +7,7 @@
 //
 
 #import "ZgItemButton.h"
-
+#import <Masonry.h>
 @implementation ZgItemButton
 
 -(void)awakeFromNib{
@@ -63,5 +63,17 @@
     CGFloat titleY = imageH;
     self.titleLabel.frame = CGRectMake(titleX, titleY, titleW, titleH);
     
+//    [self.imageView mas_remakeConstraints:^(MASConstraintMaker *make) {
+//        make.centerX.equalTo(self);
+//        make.top.equalTo(self);
+//        make.width.and.height.equalTo(self).multipliedBy(0.8);
+//    }];
+//    [self.titleLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(self.imageView.mas_bottom);
+//        make.height.equalTo(self).multipliedBy(0.2);
+//        make.centerX.equalTo(self);
+//
+//    }];
+
 }
 @end

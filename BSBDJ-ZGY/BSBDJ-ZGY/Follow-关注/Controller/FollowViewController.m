@@ -50,6 +50,10 @@
     }];
 }
 
+- (void)tappedBarButton{
+
+}
+
 - (void)tappedRegistBtn{
     RegistViewController *VC = [[RegistViewController alloc]init];
     [self presentViewController:VC animated:YES completion:nil];

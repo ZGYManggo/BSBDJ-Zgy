@@ -40,8 +40,10 @@
     //原版本这里是用的一张image，但是我个人觉得这种blur的效果还是要能看见背景比较好，所以这里用的是effectView
     UIVisualEffectView *blurView = [[UIVisualEffectView alloc]initWithEffect:blur];
     blurView.backgroundColor = [UIColor grayColorWithRGB:236 a:0.8];
-    blurView.frame = self.view.frame;
     [self.view addSubview:blurView];
+    [blurView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.and.left.and.right.bottom.equalTo(self.view);
+    }];
     
     UIButton *cancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];

@@ -32,6 +32,12 @@
 		FE42BF3A1DD55D5500944783 /* UITextField+ZgyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF391DD55D5500944783 /* UITextField+ZgyExtension.m */; };
 		FE42BF3D1DD560BC00944783 /* RegistLoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF3C1DD560BC00944783 /* RegistLoginTextField.m */; };
 		FE42BF401DD565F800944783 /* UIBarButtonItem+ZgyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BF3F1DD565F800944783 /* UIBarButtonItem+ZgyExtension.m */; };
+		FEA05AC41DD98F4100558F38 /* Const.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA05AC31DD98F4100558F38 /* Const.m */; };
+		FEA05AC71DD9917B00558F38 /* ZgHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA05AC61DD9917B00558F38 /* ZgHttpTool.m */; };
+		FEA05ACA1DD99A7500558F38 /* MeTableFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA05AC91DD99A7500558F38 /* MeTableFootView.m */; };
+		FEA05ACD1DD99D8F00558F38 /* MeSquareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA05ACC1DD99D8F00558F38 /* MeSquareModel.m */; };
+		FEA05AD01DD9BEDA00558F38 /* SquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA05ACF1DD9BEDA00558F38 /* SquareButton.m */; };
+		FEA05AD31DD9DC4500558F38 /* MeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA05AD21DD9DC4500558F38 /* MeWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +91,18 @@
 		FE42BF3C1DD560BC00944783 /* RegistLoginTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistLoginTextField.m; sourceTree = "<group>"; };
 		FE42BF3E1DD565F800944783 /* UIBarButtonItem+ZgyExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ZgyExtension.h"; sourceTree = "<group>"; };
 		FE42BF3F1DD565F800944783 /* UIBarButtonItem+ZgyExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ZgyExtension.m"; sourceTree = "<group>"; };
+		FEA05AC21DD98F4100558F38 /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		FEA05AC31DD98F4100558F38 /* Const.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Const.m; sourceTree = "<group>"; };
+		FEA05AC51DD9917B00558F38 /* ZgHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZgHttpTool.h; sourceTree = "<group>"; };
+		FEA05AC61DD9917B00558F38 /* ZgHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZgHttpTool.m; sourceTree = "<group>"; };
+		FEA05AC81DD99A7500558F38 /* MeTableFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeTableFootView.h; sourceTree = "<group>"; };
+		FEA05AC91DD99A7500558F38 /* MeTableFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeTableFootView.m; sourceTree = "<group>"; };
+		FEA05ACB1DD99D8F00558F38 /* MeSquareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeSquareModel.h; sourceTree = "<group>"; };
+		FEA05ACC1DD99D8F00558F38 /* MeSquareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeSquareModel.m; sourceTree = "<group>"; };
+		FEA05ACE1DD9BEDA00558F38 /* SquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareButton.h; sourceTree = "<group>"; };
+		FEA05ACF1DD9BEDA00558F38 /* SquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareButton.m; sourceTree = "<group>"; };
+		FEA05AD11DD9DC4500558F38 /* MeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeWebViewController.h; sourceTree = "<group>"; };
+		FEA05AD21DD9DC4500558F38 /* MeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +303,8 @@
 			children = (
 				FE42BF1A1DD45A8B00944783 /* MeViewController.h */,
 				FE42BF1B1DD45A8B00944783 /* MeViewController.m */,
+				FEA05AD11DD9DC4500558F38 /* MeWebViewController.h */,
+				FEA05AD21DD9DC4500558F38 /* MeWebViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -292,6 +312,8 @@
 		FE42BEF31DD2D1A900944783 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FEA05ACB1DD99D8F00558F38 /* MeSquareModel.h */,
+				FEA05ACC1DD99D8F00558F38 /* MeSquareModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -299,6 +321,10 @@
 		FE42BEF41DD2D1A900944783 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FEA05AC81DD99A7500558F38 /* MeTableFootView.h */,
+				FEA05AC91DD99A7500558F38 /* MeTableFootView.m */,
+				FEA05ACE1DD9BEDA00558F38 /* SquareButton.h */,
+				FEA05ACF1DD9BEDA00558F38 /* SquareButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -339,6 +365,7 @@
 		FE42BEF91DD2D1A900944783 /* Other-其他 */ = {
 			isa = PBXGroup;
 			children = (
+				FEA05AC11DD98F2300558F38 /* Tool */,
 				FE42BEFA1DD2D1A900944783 /* category */,
 				FE42BEFB1DD2D1A900944783 /* Controller */,
 				FE42BEFC1DD2D1A900944783 /* Model */,
@@ -393,6 +420,17 @@
 				FE42BF111DD419B200944783 /* ZgItemButton.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FEA05AC11DD98F2300558F38 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				FEA05AC21DD98F4100558F38 /* Const.h */,
+				FEA05AC31DD98F4100558F38 /* Const.m */,
+				FEA05AC51DD9917B00558F38 /* ZgHttpTool.h */,
+				FEA05AC61DD9917B00558F38 /* ZgHttpTool.m */,
+			);
+			name = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -519,14 +557,18 @@
 			files = (
 				FE42BF0F1DD325CF00944783 /* UIColor+ZgyExtension.m in Sources */,
 				FE42BF3D1DD560BC00944783 /* RegistLoginTextField.m in Sources */,
+				FEA05AD01DD9BEDA00558F38 /* SquareButton.m in Sources */,
 				FE42BF191DD45A2900944783 /* FollowViewController.m in Sources */,
 				FE42BF341DD47C7500944783 /* RegistView.m in Sources */,
 				FE42BF151DD41CEC00944783 /* ZgItemModel.m in Sources */,
+				FEA05AC41DD98F4100558F38 /* Const.m in Sources */,
 				FE42BF031DD2D5D300944783 /* MainTabBar.m in Sources */,
 				FE42BF001DD2D1F400944783 /* MainTabBarController.m in Sources */,
 				FE42BF281DD45B0B00944783 /* EssenceViewController.m in Sources */,
+				FEA05ACA1DD99A7500558F38 /* MeTableFootView.m in Sources */,
 				FE42BECD1DD2CA0B00944783 /* AppDelegate.m in Sources */,
 				FE42BF311DD4713700944783 /* LoginView.m in Sources */,
+				FEA05AD31DD9DC4500558F38 /* MeWebViewController.m in Sources */,
 				FE42BF3A1DD55D5500944783 /* UITextField+ZgyExtension.m in Sources */,
 				FE42BF1C1DD45A8B00944783 /* MeViewController.m in Sources */,
 				FE42BF0C1DD3237E00944783 /* PublishViewController.m in Sources */,
@@ -535,9 +577,11 @@
 				FE42BECA1DD2CA0B00944783 /* main.m in Sources */,
 				FE42BF121DD419B200944783 /* ZgItemButton.m in Sources */,
 				FE42BF401DD565F800944783 /* UIBarButtonItem+ZgyExtension.m in Sources */,
+				FEA05ACD1DD99D8F00558F38 /* MeSquareModel.m in Sources */,
 				FE42BF061DD2D6A400944783 /* MainNavController.m in Sources */,
 				FE42BF2E1DD465C700944783 /* RegistViewController.m in Sources */,
 				FE42BF091DD30F5D00944783 /* UIView+ZgyExtension.m in Sources */,
+				FEA05AC71DD9917B00558F38 /* ZgHttpTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

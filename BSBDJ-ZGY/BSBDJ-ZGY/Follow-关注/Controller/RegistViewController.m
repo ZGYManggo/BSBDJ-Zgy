@@ -17,6 +17,7 @@
 @property (nonatomic,strong) LoginView *loginView;
 @property (nonatomic,strong) UIButton *quesionBtn;
 
+
 @end
 
 @implementation RegistViewController
@@ -25,9 +26,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     UIImageView *bgImage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"login_register_background"]];
-    bgImage.frame = self.view.frame;
     bgImage.userInteractionEnabled = YES;
     [self.view addSubview:bgImage];
+    [bgImage mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.and.left.and.right.bottom.equalTo(self.view);
+    }];
     
     UIButton *closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [closeBtn setImage:[UIImage imageNamed:@"login_close_icon"] forState:UIControlStateNormal];

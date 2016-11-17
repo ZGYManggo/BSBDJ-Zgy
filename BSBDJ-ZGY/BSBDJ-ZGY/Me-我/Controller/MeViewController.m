@@ -9,6 +9,7 @@
 #import "MeViewController.h"
 #import "UIBarButtonItem+ZgyExtension.h"
 #import "MeTableFootView.h"
+#import "SettingViewController.h"
 
 @interface MeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -39,7 +40,8 @@
 
 #pragma mark - action
 - (void)tappedSettingBtn{
-
+    SettingViewController *VC = [[SettingViewController alloc]init];
+    [self.navigationController pushViewController:VC animated:YES];
 }
 
 - (void)tappedMoomBtn{

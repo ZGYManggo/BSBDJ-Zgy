@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A487369FE83DD3D1C56A8BFB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA01097B22433289FB9A077E /* libPods.a */; };
+		FE0F52761DDD47D90044A117 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F52751DDD47D90044A117 /* SettingViewController.m */; };
+		FE0F52791DDD4B3C0044A117 /* ClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F52781DDD4B3C0044A117 /* ClearCacheCell.m */; };
 		FE42BECA1DD2CA0B00944783 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BEC91DD2CA0B00944783 /* main.m */; };
 		FE42BECD1DD2CA0B00944783 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BECC1DD2CA0B00944783 /* AppDelegate.m */; };
 		FE42BED31DD2CA0B00944783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE42BED11DD2CA0B00944783 /* Main.storyboard */; };
@@ -44,6 +46,10 @@
 		65FCB4EA475A32D85B197489 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DA01097B22433289FB9A077E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E580D7CA41A39F15686B91D9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FE0F52741DDD47D90044A117 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		FE0F52751DDD47D90044A117 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		FE0F52771DDD4B3C0044A117 /* ClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearCacheCell.h; sourceTree = "<group>"; };
+		FE0F52781DDD4B3C0044A117 /* ClearCacheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearCacheCell.m; sourceTree = "<group>"; };
 		FE42BEC51DD2CA0B00944783 /* BSBDJ-ZGY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BSBDJ-ZGY.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE42BEC91DD2CA0B00944783 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE42BECB1DD2CA0B00944783 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -305,6 +311,8 @@
 				FE42BF1B1DD45A8B00944783 /* MeViewController.m */,
 				FEA05AD11DD9DC4500558F38 /* MeWebViewController.h */,
 				FEA05AD21DD9DC4500558F38 /* MeWebViewController.m */,
+				FE0F52741DDD47D90044A117 /* SettingViewController.h */,
+				FE0F52751DDD47D90044A117 /* SettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -325,6 +333,8 @@
 				FEA05AC91DD99A7500558F38 /* MeTableFootView.m */,
 				FEA05ACE1DD9BEDA00558F38 /* SquareButton.h */,
 				FEA05ACF1DD9BEDA00558F38 /* SquareButton.m */,
+				FE0F52771DDD4B3C0044A117 /* ClearCacheCell.h */,
+				FE0F52781DDD4B3C0044A117 /* ClearCacheCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -558,6 +568,7 @@
 				FE42BF0F1DD325CF00944783 /* UIColor+ZgyExtension.m in Sources */,
 				FE42BF3D1DD560BC00944783 /* RegistLoginTextField.m in Sources */,
 				FEA05AD01DD9BEDA00558F38 /* SquareButton.m in Sources */,
+				FE0F52761DDD47D90044A117 /* SettingViewController.m in Sources */,
 				FE42BF191DD45A2900944783 /* FollowViewController.m in Sources */,
 				FE42BF341DD47C7500944783 /* RegistView.m in Sources */,
 				FE42BF151DD41CEC00944783 /* ZgItemModel.m in Sources */,
@@ -579,6 +590,7 @@
 				FE42BF401DD565F800944783 /* UIBarButtonItem+ZgyExtension.m in Sources */,
 				FEA05ACD1DD99D8F00558F38 /* MeSquareModel.m in Sources */,
 				FE42BF061DD2D6A400944783 /* MainNavController.m in Sources */,
+				FE0F52791DDD4B3C0044A117 /* ClearCacheCell.m in Sources */,
 				FE42BF2E1DD465C700944783 /* RegistViewController.m in Sources */,
 				FE42BF091DD30F5D00944783 /* UIView+ZgyExtension.m in Sources */,
 				FEA05AC71DD9917B00558F38 /* ZgHttpTool.m in Sources */,

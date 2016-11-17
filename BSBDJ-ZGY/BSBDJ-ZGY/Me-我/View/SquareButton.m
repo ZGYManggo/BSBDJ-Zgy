@@ -32,7 +32,23 @@
     [self sd_setImageWithURL:[NSURL URLWithString:model.icon] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"header_cry_icon"]];
 
 }
-
+//-(void)updateConstraints{
+//    
+//    [self.imageView mas_remakeConstraints:^(MASConstraintMaker *make) {
+//        make.width.and.height.equalTo(self).multipliedBy(0.5);
+//        make.centerX.equalTo(self);
+//        make.top.equalTo(self).multipliedBy(0.15);
+//    }];
+//    [self.titleLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(self).multipliedBy(0.65);
+//        make.centerX.equalTo(self.imageView);
+//        make.height.equalTo(self).multipliedBy(0.35);
+//        make.width.equalTo(self);
+//        
+//    }];
+//    [super updateConstraints];
+//
+//}
 -(void)layoutSubviews{
     [super layoutSubviews];
 //    [self.imageView mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -41,11 +57,13 @@
 //        make.top.equalTo(self).multipliedBy(0.15);
 //    }];
 //    [self.titleLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo(self);
+//        make.top.equalTo(self.imageView.mas_bottom);
 //        make.centerX.equalTo(self.imageView);
-//        make.bottom.and.width.equalTo(self);
+//        make.height.equalTo(self).multipliedBy(0.35);
+//        make.width.equalTo(self);
 //        
 //    }];
+
     self.imageView.zg_y = self.zg_height * 0.15;
     self.imageView.zg_width = self.zg_width * 0.5;
     self.imageView.zg_height = self.imageView.zg_width;

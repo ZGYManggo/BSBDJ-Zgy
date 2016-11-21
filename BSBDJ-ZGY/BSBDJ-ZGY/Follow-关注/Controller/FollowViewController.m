@@ -9,7 +9,6 @@
 #import "FollowViewController.h"
 #import "RegistViewController.h"
 #import "UIBarButtonItem+ZgyExtension.h"
-#import <Masonry.h>
 @interface FollowViewController ()
 
 @end

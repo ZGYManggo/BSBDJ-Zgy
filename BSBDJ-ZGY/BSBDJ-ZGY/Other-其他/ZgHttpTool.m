@@ -10,7 +10,7 @@
 #import <AFNetworking.h>
 @implementation ZgHttpTool
 
-+ (void)toolWith:(ZgHttpMethod)method param:(NSDictionary *)param url:(NSString *)url success:(ZgSuccess)success failure:(ZgFailure)failure{
++ (void)toolWith:(ZgHttpMethod)method param:(NSDictionary *)param url:(NSString *)url success:(ZgSuccess)success failure:(ZgFailure)failure{    
     switch (method) {
         case ZgGet:
         {

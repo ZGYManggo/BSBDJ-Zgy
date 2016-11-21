@@ -8,7 +8,6 @@
 
 #import "SettingViewController.h"
 #import "ClearCacheCell.h"
-#import <Masonry.h>
 @interface SettingViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *mainTable;
 @end

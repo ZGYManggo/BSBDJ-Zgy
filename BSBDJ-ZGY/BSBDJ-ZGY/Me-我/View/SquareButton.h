@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Masonry.h>
 #import "MeSquareModel.h"
 @interface SquareButton : UIButton
 @property (nonatomic,strong) MeSquareModel *model;

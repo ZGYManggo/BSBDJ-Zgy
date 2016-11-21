@@ -7,7 +7,6 @@
 //
 
 #import "ZgItemButton.h"
-#import <Masonry.h>
 @implementation ZgItemButton
 
 -(void)awakeFromNib{

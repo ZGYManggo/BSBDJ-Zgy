@@ -10,6 +10,8 @@
 		A487369FE83DD3D1C56A8BFB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA01097B22433289FB9A077E /* libPods.a */; };
 		FE0F52761DDD47D90044A117 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F52751DDD47D90044A117 /* SettingViewController.m */; };
 		FE0F52791DDD4B3C0044A117 /* ClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F52781DDD4B3C0044A117 /* ClearCacheCell.m */; };
+		FE0F528C1DE2A1100044A117 /* TitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F528B1DE2A1100044A117 /* TitleView.m */; };
+		FE0F528F1DE2DF4B0044A117 /* TitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F528E1DE2DF4B0044A117 /* TitleButton.m */; };
 		FE42BECA1DD2CA0B00944783 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BEC91DD2CA0B00944783 /* main.m */; };
 		FE42BECD1DD2CA0B00944783 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BECC1DD2CA0B00944783 /* AppDelegate.m */; };
 		FE42BED31DD2CA0B00944783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE42BED11DD2CA0B00944783 /* Main.storyboard */; };
@@ -50,6 +52,10 @@
 		FE0F52751DDD47D90044A117 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		FE0F52771DDD4B3C0044A117 /* ClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearCacheCell.h; sourceTree = "<group>"; };
 		FE0F52781DDD4B3C0044A117 /* ClearCacheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearCacheCell.m; sourceTree = "<group>"; };
+		FE0F528A1DE2A1100044A117 /* TitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleView.h; sourceTree = "<group>"; };
+		FE0F528B1DE2A1100044A117 /* TitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleView.m; sourceTree = "<group>"; };
+		FE0F528D1DE2DF4B0044A117 /* TitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleButton.h; sourceTree = "<group>"; };
+		FE0F528E1DE2DF4B0044A117 /* TitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleButton.m; sourceTree = "<group>"; };
 		FE42BEC51DD2CA0B00944783 /* BSBDJ-ZGY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BSBDJ-ZGY.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE42BEC91DD2CA0B00944783 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE42BECB1DD2CA0B00944783 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -249,6 +255,10 @@
 		FE42BEEC1DD2D1A900944783 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FE0F528A1DE2A1100044A117 /* TitleView.h */,
+				FE0F528B1DE2A1100044A117 /* TitleView.m */,
+				FE0F528D1DE2DF4B0044A117 /* TitleButton.h */,
+				FE0F528E1DE2DF4B0044A117 /* TitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -572,6 +582,7 @@
 				FE42BF191DD45A2900944783 /* FollowViewController.m in Sources */,
 				FE42BF341DD47C7500944783 /* RegistView.m in Sources */,
 				FE42BF151DD41CEC00944783 /* ZgItemModel.m in Sources */,
+				FE0F528C1DE2A1100044A117 /* TitleView.m in Sources */,
 				FEA05AC41DD98F4100558F38 /* Const.m in Sources */,
 				FE42BF031DD2D5D300944783 /* MainTabBar.m in Sources */,
 				FE42BF001DD2D1F400944783 /* MainTabBarController.m in Sources */,
@@ -583,6 +594,7 @@
 				FE42BF3A1DD55D5500944783 /* UITextField+ZgyExtension.m in Sources */,
 				FE42BF1C1DD45A8B00944783 /* MeViewController.m in Sources */,
 				FE42BF0C1DD3237E00944783 /* PublishViewController.m in Sources */,
+				FE0F528F1DE2DF4B0044A117 /* TitleButton.m in Sources */,
 				FE42BF2B1DD45B1900944783 /* CommentViewController.m in Sources */,
 				FE42BF251DD45AF900944783 /* NewPostsViewController.m in Sources */,
 				FE42BECA1DD2CA0B00944783 /* main.m in Sources */,

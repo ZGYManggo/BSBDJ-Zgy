@@ -25,7 +25,6 @@
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             
             unsigned long long size = [self fileSizeWith:NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject];
-            // 判断cell是否已经被销毁,如果销毁了就直接返回
             if (weakSelf == nil) {
                 return ;
             }

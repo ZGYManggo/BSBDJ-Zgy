@@ -13,7 +13,7 @@
 @interface PublishViewController ()
 @property (nonatomic,strong) NSMutableArray *buttonArr;
 @property(nonatomic,strong)NSTimer *timer;
-
+@property (nonatomic,strong) UIImageView *sloganImg;
 @end
 
 @implementation PublishViewController
@@ -63,25 +63,58 @@
         make.centerX.equalTo(blurView);
         make.centerY.equalTo(blurView).multipliedBy(0.3);
     }];
-    
+    sloganImg.transform = CGAffineTransformMakeTranslation(0, -SCREEN_HEIGHT);
+    self.sloganImg = sloganImg;
     [self addButton:blurView.contentView];
     
-    __block int count = 0;
+    __block int count = 4;
 
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 repeats:YES block:^(NSTimer * _Nonnull timer) {
-        
-        if (count == self.buttonArr.count) {
-            [self.timer invalidate];
-            return ;
-        }
-        
-        UIButton *btn = self.buttonArr[count];
-        [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
-            btn.transform = CGAffineTransformIdentity;
-        } completion:nil];
-        
-        count ++;
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.2 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        [self animationWithShow:YES count:count];
+        count -= 3;
     }];
+}
+
+- (void)animationWithShow:(BOOL)isShow count:(int)count{
+    CGAffineTransform animationTransform;
+    if (isShow) {
+        animationTransform = CGAffineTransformIdentity;
+    }else{
+        animationTransform = CGAffineTransformMakeTranslation(0, SCREEN_HEIGHT);
+    }
+    if (count < -1) {
+        [self.timer invalidate];
+        [UIView animateWithDuration:0.8 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:1
+                            options:UIViewAnimationOptionCurveLinear animations:^{
+            self.sloganImg.transform = animationTransform;
+        } completion:^(BOOL finished) {
+            
+        }];
+        return ;
+    }
+    if (!isShow) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.8f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self dismissViewControllerAnimated:NO completion:nil];
+
+        });
+    }
+    
+    UIButton *centerBtn = self.buttonArr[count];
+    UIButton *leftBtn = self.buttonArr[count-1];
+    UIButton *rightBtn = self.buttonArr[count+1];
+    
+    [UIView animateWithDuration:0.8 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
+        centerBtn.transform = animationTransform;
+    } completion:^(BOOL finished) {
+    }];
+    [UIView animateWithDuration:0.8 delay:0.1 usingSpringWithDamping:0.8 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
+        rightBtn.transform = animationTransform;
+        
+    } completion:nil];
+    [UIView animateWithDuration:0.8 delay:0.2 usingSpringWithDamping:0.8 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
+        leftBtn.transform = animationTransform;
+        
+    } completion:nil];
 }
 
 - (void)addButton:(UIView *)contentView{
@@ -101,7 +134,7 @@
         itemBtn.tag = count;
         [itemBtn addTarget:self action:@selector(tappedItemBtn:) forControlEvents:UIControlEventTouchUpInside];
         [contentView addSubview:itemBtn];
-        itemBtn.transform = CGAffineTransformMakeTranslation(0, SCREEN_HEIGHT);
+        itemBtn.transform = CGAffineTransformMakeTranslation(0, -SCREEN_HEIGHT);
         [self.buttonArr addObject:itemBtn];
         [itemBtn addAnimation];
     }
@@ -112,7 +145,12 @@
 }
 
 - (void)tappedCancelBtn{
-    [self dismissViewControllerAnimated:YES completion:nil];
+    __block int count = 4;
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.2 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        [self animationWithShow:NO count:count];
+        count -= 3;
+    }];
 }
 
 @end

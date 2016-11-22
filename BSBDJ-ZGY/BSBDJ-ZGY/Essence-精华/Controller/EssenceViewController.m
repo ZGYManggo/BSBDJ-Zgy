@@ -39,6 +39,7 @@
     for (int i = 0 ; i<5; i++) {
         UIViewController *VC = [[UIViewController alloc]init];
         VC.view.backgroundColor = [UIColor colorWithr:(arc4random()%255) g:(arc4random()%255) b:(arc4random()%255) a:1];
+        VC.view.frame = self.mainScroll.bounds;
         [self addChildViewController:VC];
     }
     [self.mainScroll addSubview:self.childViewControllers.firstObject.view];

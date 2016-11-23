@@ -19,7 +19,6 @@
     // Do any additional setup after loading the view.
      [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
     self.interactivePopGestureRecognizer.delegate = self;
-    
 }
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {

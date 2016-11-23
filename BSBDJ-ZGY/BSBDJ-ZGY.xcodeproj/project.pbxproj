@@ -42,6 +42,13 @@
 		FEA05ACD1DD99D8F00558F38 /* MeSquareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA05ACC1DD99D8F00558F38 /* MeSquareModel.m */; };
 		FEA05AD01DD9BEDA00558F38 /* SquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA05ACF1DD9BEDA00558F38 /* SquareButton.m */; };
 		FEA05AD31DD9DC4500558F38 /* MeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA05AD21DD9DC4500558F38 /* MeWebViewController.m */; };
+		FEFE11FD1DE57BCF0019E089 /* MainTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFE11FC1DE57BCF0019E089 /* MainTopicViewController.m */; };
+		FEFE12001DE57BEC0019E089 /* AllTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFE11FF1DE57BEC0019E089 /* AllTopicController.m */; };
+		FEFE12031DE57C070019E089 /* VideoTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFE12021DE57C070019E089 /* VideoTopicController.m */; };
+		FEFE12061DE57C170019E089 /* VoiceTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFE12051DE57C170019E089 /* VoiceTopicController.m */; };
+		FEFE12091DE57C3B0019E089 /* PictureTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFE12081DE57C3B0019E089 /* PictureTopicController.m */; };
+		FEFE120C1DE57C790019E089 /* WordTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFE120B1DE57C790019E089 /* WordTopicController.m */; };
+		FEFE120F1DE57FCD0019E089 /* TopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFE120E1DE57FCD0019E089 /* TopicModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +122,20 @@
 		FEA05ACF1DD9BEDA00558F38 /* SquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareButton.m; sourceTree = "<group>"; };
 		FEA05AD11DD9DC4500558F38 /* MeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeWebViewController.h; sourceTree = "<group>"; };
 		FEA05AD21DD9DC4500558F38 /* MeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeWebViewController.m; sourceTree = "<group>"; };
+		FEFE11FB1DE57BCF0019E089 /* MainTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTopicViewController.h; sourceTree = "<group>"; };
+		FEFE11FC1DE57BCF0019E089 /* MainTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTopicViewController.m; sourceTree = "<group>"; };
+		FEFE11FE1DE57BEC0019E089 /* AllTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllTopicController.h; sourceTree = "<group>"; };
+		FEFE11FF1DE57BEC0019E089 /* AllTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllTopicController.m; sourceTree = "<group>"; };
+		FEFE12011DE57C070019E089 /* VideoTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoTopicController.h; sourceTree = "<group>"; };
+		FEFE12021DE57C070019E089 /* VideoTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoTopicController.m; sourceTree = "<group>"; };
+		FEFE12041DE57C170019E089 /* VoiceTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceTopicController.h; sourceTree = "<group>"; };
+		FEFE12051DE57C170019E089 /* VoiceTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceTopicController.m; sourceTree = "<group>"; };
+		FEFE12071DE57C3B0019E089 /* PictureTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureTopicController.h; sourceTree = "<group>"; };
+		FEFE12081DE57C3B0019E089 /* PictureTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureTopicController.m; sourceTree = "<group>"; };
+		FEFE120A1DE57C790019E089 /* WordTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordTopicController.h; sourceTree = "<group>"; };
+		FEFE120B1DE57C790019E089 /* WordTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordTopicController.m; sourceTree = "<group>"; };
+		FEFE120D1DE57FCD0019E089 /* TopicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicModel.h; sourceTree = "<group>"; };
+		FEFE120E1DE57FCD0019E089 /* TopicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +260,7 @@
 		FE42BEEA1DD2D1A900944783 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FEFE11FA1DE57BAA0019E089 /* ChildViewController */,
 				FE42BF261DD45B0B00944783 /* EssenceViewController.h */,
 				FE42BF271DD45B0B00944783 /* EssenceViewController.m */,
 			);
@@ -248,6 +270,8 @@
 		FE42BEEB1DD2D1A900944783 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FEFE120D1DE57FCD0019E089 /* TopicModel.h */,
+				FEFE120E1DE57FCD0019E089 /* TopicModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -453,6 +477,25 @@
 			name = Tool;
 			sourceTree = "<group>";
 		};
+		FEFE11FA1DE57BAA0019E089 /* ChildViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FEFE11FB1DE57BCF0019E089 /* MainTopicViewController.h */,
+				FEFE11FC1DE57BCF0019E089 /* MainTopicViewController.m */,
+				FEFE11FE1DE57BEC0019E089 /* AllTopicController.h */,
+				FEFE11FF1DE57BEC0019E089 /* AllTopicController.m */,
+				FEFE12011DE57C070019E089 /* VideoTopicController.h */,
+				FEFE12021DE57C070019E089 /* VideoTopicController.m */,
+				FEFE12041DE57C170019E089 /* VoiceTopicController.h */,
+				FEFE12051DE57C170019E089 /* VoiceTopicController.m */,
+				FEFE12071DE57C3B0019E089 /* PictureTopicController.h */,
+				FEFE12081DE57C3B0019E089 /* PictureTopicController.m */,
+				FEFE120A1DE57C790019E089 /* WordTopicController.h */,
+				FEFE120B1DE57C790019E089 /* WordTopicController.m */,
+			);
+			name = ChildViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -579,6 +622,7 @@
 				FE42BF3D1DD560BC00944783 /* RegistLoginTextField.m in Sources */,
 				FEA05AD01DD9BEDA00558F38 /* SquareButton.m in Sources */,
 				FE0F52761DDD47D90044A117 /* SettingViewController.m in Sources */,
+				FEFE12001DE57BEC0019E089 /* AllTopicController.m in Sources */,
 				FE42BF191DD45A2900944783 /* FollowViewController.m in Sources */,
 				FE42BF341DD47C7500944783 /* RegistView.m in Sources */,
 				FE42BF151DD41CEC00944783 /* ZgItemModel.m in Sources */,
@@ -588,7 +632,9 @@
 				FE42BF001DD2D1F400944783 /* MainTabBarController.m in Sources */,
 				FE42BF281DD45B0B00944783 /* EssenceViewController.m in Sources */,
 				FEA05ACA1DD99A7500558F38 /* MeTableFootView.m in Sources */,
+				FEFE120C1DE57C790019E089 /* WordTopicController.m in Sources */,
 				FE42BECD1DD2CA0B00944783 /* AppDelegate.m in Sources */,
+				FEFE12031DE57C070019E089 /* VideoTopicController.m in Sources */,
 				FE42BF311DD4713700944783 /* LoginView.m in Sources */,
 				FEA05AD31DD9DC4500558F38 /* MeWebViewController.m in Sources */,
 				FE42BF3A1DD55D5500944783 /* UITextField+ZgyExtension.m in Sources */,
@@ -598,14 +644,18 @@
 				FE42BF2B1DD45B1900944783 /* CommentViewController.m in Sources */,
 				FE42BF251DD45AF900944783 /* NewPostsViewController.m in Sources */,
 				FE42BECA1DD2CA0B00944783 /* main.m in Sources */,
+				FEFE11FD1DE57BCF0019E089 /* MainTopicViewController.m in Sources */,
 				FE42BF121DD419B200944783 /* ZgItemButton.m in Sources */,
 				FE42BF401DD565F800944783 /* UIBarButtonItem+ZgyExtension.m in Sources */,
 				FEA05ACD1DD99D8F00558F38 /* MeSquareModel.m in Sources */,
 				FE42BF061DD2D6A400944783 /* MainNavController.m in Sources */,
+				FEFE12091DE57C3B0019E089 /* PictureTopicController.m in Sources */,
 				FE0F52791DDD4B3C0044A117 /* ClearCacheCell.m in Sources */,
 				FE42BF2E1DD465C700944783 /* RegistViewController.m in Sources */,
 				FE42BF091DD30F5D00944783 /* UIView+ZgyExtension.m in Sources */,
+				FEFE12061DE57C170019E089 /* VoiceTopicController.m in Sources */,
 				FEA05AC71DD9917B00558F38 /* ZgHttpTool.m in Sources */,
+				FEFE120F1DE57FCD0019E089 /* TopicModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

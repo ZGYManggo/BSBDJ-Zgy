@@ -5,23 +5,17 @@
 //  Created by jiemo on 16/11/10.
 //  Copyright © 2016年 张高远. All rights reserved.
 //
-typedef NS_ENUM(NSInteger , CLTopicType) {
-    /** 全部 */
-    CLTopicTypeAll = 1,
-    /** 图片 */
-    CLTopicTypePicture = 10,
-    /** 段子 */
-    CLTopicTypeWord = 29,
-    /** 音频 */
-    CLTopicTypeVoice = 31,
-    /** 视频 */
-    CLTopicTypeVideo = 41,
-};
+
 #import "EssenceViewController.h"
 #import "UIBarButtonItem+ZgyExtension.h"
 #import "TitleView.h"
-#import "ZgHttpTool.h"
 #import <UIImageView+WebCache.h>
+#import "AllTopicController.h"
+#import "VideoTopicController.h"
+#import "VoiceTopicController.h"
+#import "PictureTopicController.h"
+#import "WordTopicController.h"
+
 @interface EssenceViewController ()<UIScrollViewDelegate>
 @property (nonatomic,strong) UIScrollView *mainScroll;
 @property (nonatomic,strong) TitleView *titleView;
@@ -45,32 +39,28 @@ typedef NS_ENUM(NSInteger , CLTopicType) {
     }];
     [self addSubViewController];
     [self setUpTitleView];
-    
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    parameter[@"a"] = newlist;
-    parameter[@"c"] = @"data";
-    parameter[@"maxtime"] = self.maxtime;
-    parameter[@"type"] = @(self.type);
-
-    [ZgHttpTool toolWith:ZgGet param:params url:
-                                      @"http://api.budejie.com/api/api_open.php" success:^(id obj) {
-                                          if ( [NSJSONSerialization isValidJSONObject:obj]) {
-                                              [(NSDictionary *)obj writeToFile:@"/Users/jiemo/Desktop/dataText.plist" atomically:YES];
-                                          }
-                                      } failure:^(NSString *errMsg) {
-                                          NSLog(@"%@",errMsg);
-                                      }];
+  
 }
 
 - (void)addSubViewController{
-    for (int i = 0 ; i<5; i++) {
-        UIViewController *VC = [[UIViewController alloc]init];
-        VC.view.backgroundColor = [UIColor colorWithr:(arc4random()%255) g:(arc4random()%255) b:(arc4random()%255) a:1];
-        [self addChildViewController:VC];
-    }
-    self.childViewControllers.firstObject.view.frame = self.mainScroll.bounds;
+    AllTopicController * allTopic = [[AllTopicController alloc]init];
+    VideoTopicController *videoTopic = [[VideoTopicController alloc]init];
+    VoiceTopicController *voiceTopic = [[VoiceTopicController alloc]init];
+    PictureTopicController *pictureTopic = [[PictureTopicController alloc]init];
+    WordTopicController *wordTopic = [[WordTopicController alloc]init];
+    [self addChildViewController:allTopic];
+    [self addChildViewController:videoTopic];
+    [self addChildViewController:voiceTopic];
+    [self addChildViewController:pictureTopic];
+    [self addChildViewController:wordTopic];
 
-    [self.mainScroll addSubview:self.childViewControllers.firstObject.view];
+//    allTopic.view.frame = self.mainScroll.bounds;
+//    NSLog(@"%@",NSStringFromCGRect(allTopic.view.frame));
+//    NSLog(@"%@",NSStringFromCGRect(self.mainScroll.bounds));
+
+    [self.mainScroll addSubview:allTopic.view];
+//    NSLog(@"%@",NSStringFromCGRect(self.view.bounds));
+
     self.mainScroll.contentSize = CGSizeMake(self.childViewControllers.count * SCREEN_WIDTH, 0);
 }
 
@@ -120,6 +110,8 @@ typedef NS_ENUM(NSInteger , CLTopicType) {
         return;
     }
     VC.view.frame = scrollView.bounds;
+    NSLog(@"%@",NSStringFromCGRect(scrollView.bounds));
     [self.mainScroll addSubview:VC.view];
+
 }
 @end

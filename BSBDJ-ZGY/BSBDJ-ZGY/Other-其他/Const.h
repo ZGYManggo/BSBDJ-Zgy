@@ -9,3 +9,5 @@
 #import <Foundation/Foundation.h>
 
 UIKIT_EXTERN NSString *const CommonURL;
+
+UIKIT_EXTERN CGFloat const Margin;

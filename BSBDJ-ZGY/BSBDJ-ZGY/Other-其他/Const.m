@@ -8,5 +8,6 @@
 
 
 NSString * const CommonURL = @"http://api.budejie.com/api/api_open.php";
+CGFloat const Margin = 10;
 
 

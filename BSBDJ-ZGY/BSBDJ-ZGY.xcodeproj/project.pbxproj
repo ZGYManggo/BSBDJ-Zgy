@@ -49,6 +49,8 @@
 		FEFE12091DE57C3B0019E089 /* PictureTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFE12081DE57C3B0019E089 /* PictureTopicController.m */; };
 		FEFE120C1DE57C790019E089 /* WordTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFE120B1DE57C790019E089 /* WordTopicController.m */; };
 		FEFE120F1DE57FCD0019E089 /* TopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFE120E1DE57FCD0019E089 /* TopicModel.m */; };
+		FEFE12121DE691290019E089 /* TopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFE12111DE691290019E089 /* TopicCell.m */; };
+		FEFE12151DE697C10019E089 /* UIImageView+ZgyCornerRadiusExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFE12141DE697C10019E089 /* UIImageView+ZgyCornerRadiusExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +138,10 @@
 		FEFE120B1DE57C790019E089 /* WordTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordTopicController.m; sourceTree = "<group>"; };
 		FEFE120D1DE57FCD0019E089 /* TopicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicModel.h; sourceTree = "<group>"; };
 		FEFE120E1DE57FCD0019E089 /* TopicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicModel.m; sourceTree = "<group>"; };
+		FEFE12101DE691290019E089 /* TopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicCell.h; sourceTree = "<group>"; };
+		FEFE12111DE691290019E089 /* TopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicCell.m; sourceTree = "<group>"; };
+		FEFE12131DE697C10019E089 /* UIImageView+ZgyCornerRadiusExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ZgyCornerRadiusExtension.h"; sourceTree = "<group>"; };
+		FEFE12141DE697C10019E089 /* UIImageView+ZgyCornerRadiusExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ZgyCornerRadiusExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +289,8 @@
 				FE0F528B1DE2A1100044A117 /* TitleView.m */,
 				FE0F528D1DE2DF4B0044A117 /* TitleButton.h */,
 				FE0F528E1DE2DF4B0044A117 /* TitleButton.m */,
+				FEFE12101DE691290019E089 /* TopicCell.h */,
+				FEFE12111DE691290019E089 /* TopicCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -429,6 +437,8 @@
 				FE42BF391DD55D5500944783 /* UITextField+ZgyExtension.m */,
 				FE42BF3E1DD565F800944783 /* UIBarButtonItem+ZgyExtension.h */,
 				FE42BF3F1DD565F800944783 /* UIBarButtonItem+ZgyExtension.m */,
+				FEFE12131DE697C10019E089 /* UIImageView+ZgyCornerRadiusExtension.h */,
+				FEFE12141DE697C10019E089 /* UIImageView+ZgyCornerRadiusExtension.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -634,6 +644,7 @@
 				FEA05ACA1DD99A7500558F38 /* MeTableFootView.m in Sources */,
 				FEFE120C1DE57C790019E089 /* WordTopicController.m in Sources */,
 				FE42BECD1DD2CA0B00944783 /* AppDelegate.m in Sources */,
+				FEFE12151DE697C10019E089 /* UIImageView+ZgyCornerRadiusExtension.m in Sources */,
 				FEFE12031DE57C070019E089 /* VideoTopicController.m in Sources */,
 				FE42BF311DD4713700944783 /* LoginView.m in Sources */,
 				FEA05AD31DD9DC4500558F38 /* MeWebViewController.m in Sources */,
@@ -643,6 +654,7 @@
 				FE0F528F1DE2DF4B0044A117 /* TitleButton.m in Sources */,
 				FE42BF2B1DD45B1900944783 /* CommentViewController.m in Sources */,
 				FE42BF251DD45AF900944783 /* NewPostsViewController.m in Sources */,
+				FEFE12121DE691290019E089 /* TopicCell.m in Sources */,
 				FE42BECA1DD2CA0B00944783 /* main.m in Sources */,
 				FEFE11FD1DE57BCF0019E089 /* MainTopicViewController.m in Sources */,
 				FE42BF121DD419B200944783 /* ZgItemButton.m in Sources */,

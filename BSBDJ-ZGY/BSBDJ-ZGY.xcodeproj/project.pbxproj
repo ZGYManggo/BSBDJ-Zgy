@@ -42,6 +42,8 @@
 		FEA05ACD1DD99D8F00558F38 /* MeSquareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA05ACC1DD99D8F00558F38 /* MeSquareModel.m */; };
 		FEA05AD01DD9BEDA00558F38 /* SquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA05ACF1DD9BEDA00558F38 /* SquareButton.m */; };
 		FEA05AD31DD9DC4500558F38 /* MeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA05AD21DD9DC4500558F38 /* MeWebViewController.m */; };
+		FECD2A3F1DE8298F0067BE3D /* UIViewController+ZgyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FECD2A3E1DE8298F0067BE3D /* UIViewController+ZgyExtension.m */; };
+		FECD2A421DEBE1160067BE3D /* CenterContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FECD2A411DEBE1160067BE3D /* CenterContentView.m */; };
 		FEFE11FD1DE57BCF0019E089 /* MainTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFE11FC1DE57BCF0019E089 /* MainTopicViewController.m */; };
 		FEFE12001DE57BEC0019E089 /* AllTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFE11FF1DE57BEC0019E089 /* AllTopicController.m */; };
 		FEFE12031DE57C070019E089 /* VideoTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFE12021DE57C070019E089 /* VideoTopicController.m */; };
@@ -124,6 +126,10 @@
 		FEA05ACF1DD9BEDA00558F38 /* SquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareButton.m; sourceTree = "<group>"; };
 		FEA05AD11DD9DC4500558F38 /* MeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeWebViewController.h; sourceTree = "<group>"; };
 		FEA05AD21DD9DC4500558F38 /* MeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeWebViewController.m; sourceTree = "<group>"; };
+		FECD2A3D1DE8298F0067BE3D /* UIViewController+ZgyExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZgyExtension.h"; sourceTree = "<group>"; };
+		FECD2A3E1DE8298F0067BE3D /* UIViewController+ZgyExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZgyExtension.m"; sourceTree = "<group>"; };
+		FECD2A401DEBE1160067BE3D /* CenterContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterContentView.h; sourceTree = "<group>"; };
+		FECD2A411DEBE1160067BE3D /* CenterContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterContentView.m; sourceTree = "<group>"; };
 		FEFE11FB1DE57BCF0019E089 /* MainTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTopicViewController.h; sourceTree = "<group>"; };
 		FEFE11FC1DE57BCF0019E089 /* MainTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTopicViewController.m; sourceTree = "<group>"; };
 		FEFE11FE1DE57BEC0019E089 /* AllTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllTopicController.h; sourceTree = "<group>"; };
@@ -291,6 +297,8 @@
 				FE0F528E1DE2DF4B0044A117 /* TitleButton.m */,
 				FEFE12101DE691290019E089 /* TopicCell.h */,
 				FEFE12111DE691290019E089 /* TopicCell.m */,
+				FECD2A401DEBE1160067BE3D /* CenterContentView.h */,
+				FECD2A411DEBE1160067BE3D /* CenterContentView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -439,6 +447,8 @@
 				FE42BF3F1DD565F800944783 /* UIBarButtonItem+ZgyExtension.m */,
 				FEFE12131DE697C10019E089 /* UIImageView+ZgyCornerRadiusExtension.h */,
 				FEFE12141DE697C10019E089 /* UIImageView+ZgyCornerRadiusExtension.m */,
+				FECD2A3D1DE8298F0067BE3D /* UIViewController+ZgyExtension.h */,
+				FECD2A3E1DE8298F0067BE3D /* UIViewController+ZgyExtension.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -651,7 +661,9 @@
 				FE42BF3A1DD55D5500944783 /* UITextField+ZgyExtension.m in Sources */,
 				FE42BF1C1DD45A8B00944783 /* MeViewController.m in Sources */,
 				FE42BF0C1DD3237E00944783 /* PublishViewController.m in Sources */,
+				FECD2A3F1DE8298F0067BE3D /* UIViewController+ZgyExtension.m in Sources */,
 				FE0F528F1DE2DF4B0044A117 /* TitleButton.m in Sources */,
+				FECD2A421DEBE1160067BE3D /* CenterContentView.m in Sources */,
 				FE42BF2B1DD45B1900944783 /* CommentViewController.m in Sources */,
 				FE42BF251DD45AF900944783 /* NewPostsViewController.m in Sources */,
 				FEFE12121DE691290019E089 /* TopicCell.m in Sources */,

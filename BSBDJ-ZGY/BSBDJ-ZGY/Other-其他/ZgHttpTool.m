@@ -20,6 +20,7 @@
                 }
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 if (error) {
+                    [self failureEncodingResponse:error httpURLResponse:task];
                     failure(error.localizedDescription);
                 }
             }];
@@ -34,6 +35,8 @@
                 }
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 if (error) {
+                    [self failureEncodingResponse:error httpURLResponse:task];
+
                     failure(error.localizedDescription);
                 }
             }];
@@ -47,6 +50,8 @@
                 }
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 if (error) {
+                    [self failureEncodingResponse:error httpURLResponse:task];
+
                     failure(error.localizedDescription);
                 }
 
@@ -61,6 +66,8 @@
                 }
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 if (error) {
+                    [self failureEncodingResponse:error httpURLResponse:task];
+
                     failure(error.localizedDescription);
                 }
 
@@ -70,6 +77,13 @@
         default:
             break;
     }
+}
+
++ (void)failureEncodingResponse:(NSError *)error httpURLResponse:(NSURLSessionDataTask*)task{
+    NSHTTPURLResponse *response = (NSHTTPURLResponse*)task.response;
+    NSInteger statusCode = response.statusCode;
+    NSString* errResponse = [[NSString alloc] initWithData:(NSData *)error.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey] encoding:NSUTF8StringEncoding];
+    ZGLog(@"%@，%ld",errResponse,statusCode);
 }
 
 @end

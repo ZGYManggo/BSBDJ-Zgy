@@ -15,6 +15,7 @@
 @implementation SquareButton
 
 - (instancetype)init{
+    
     if (self = [super init]) {
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
         self.titleLabel.font = [UIFont systemFontOfSize:15];

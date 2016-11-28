@@ -64,4 +64,6 @@ typedef NS_ENUM(NSInteger , TopicType) {
 @property(nonatomic,strong)NSString *videouri;
 
 @property(nonatomic,strong)NSString *voiceuri;
+
+
 @end

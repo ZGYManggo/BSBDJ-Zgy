@@ -8,6 +8,7 @@
 
 #import "TopicCell.h"
 #import <UIImageView+WebCache.h>
+#import "CenterContentView.h"
 #import "UIImageView+ZgyCornerRadiusExtension.h"
 @interface TopicCell()
 
@@ -21,9 +22,20 @@
 @property (nonatomic,strong) UIButton *shareButton;
 @property (nonatomic,strong) UIButton *commentButton;
 @property (nonatomic,strong) UIView *line;
+@property (nonatomic,weak) CenterContentView *centerContentView;
 @end
 
 @implementation TopicCell
+
+-(UIView *)centerContentView{
+    if (!_centerContentView) {
+        CenterContentView *centerContentView = [[CenterContentView alloc]init];
+        centerContentView.backgroundColor = [UIColor clearColor];
+        _centerContentView = centerContentView;
+        [self.contentView addSubview:centerContentView];
+    }
+    return _centerContentView;
+}
 
 -(UIImageView *)headImageView{
     if (!_headImageView) {
@@ -72,6 +84,7 @@
 -(UIButton *)likeButton{
     if (!_likeButton) {
         _likeButton = [self setupBottomButton:_likeButton title:@"顶" image:[UIImage imageNamed:@"mainCellDing"]];
+        
     }
     return _likeButton;
 }
@@ -104,6 +117,7 @@
     [setButton setTitle:title forState:UIControlStateNormal];
     setButton.titleEdgeInsets = UIEdgeInsetsMake(0, 5, 0, 0);
     setButton.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 5);
+    setButton.titleLabel.font = [UIFont systemFontOfSize:14.f];
     return setButton;
 }
 
@@ -118,6 +132,7 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
         [self addChildView];
         [self drawSubView];
     }
@@ -160,6 +175,12 @@
         make.top.equalTo(self.headImageView.mas_bottom).offset(Margin);
         make.left.equalTo(self.headImageView);
         make.right.equalTo(self).offset(-Margin);
+        make.bottom.equalTo(self.centerContentView.mas_top);
+    }];
+    [self.centerContentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.and.right.equalTo(self);
+        
+        make.height.mas_equalTo(0);
         make.bottom.equalTo(self.line.mas_top);
     }];
     [self.line mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -202,12 +223,24 @@
     self.nameLabel.text = topicModel.name;
     self.timeLabel.text = topicModel.created_at;
     self.textTopicLabel.text = topicModel.text;
+    [self.likeButton setTitle:[NSString stringWithFormat:@"%ld",topicModel.ding] forState:UIControlStateNormal];
+    [self.unlikeButton setTitle:[NSString stringWithFormat:@"%ld",topicModel.cai] forState:UIControlStateNormal];
+    [self.shareButton setTitle:[NSString stringWithFormat:@"%ld",topicModel.repost] forState:UIControlStateNormal];
+    [self.commentButton setTitle:[NSString stringWithFormat:@"%ld",topicModel.comment] forState:UIControlStateNormal];
+    self.centerContentView.model = topicModel;
+    [self.centerContentView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo([CenterContentView heighOfContentView:topicModel]);
+    }];
+    [self layoutIfNeeded];
 }
 
 + (CGFloat)getHeightOfCell:(TopicModel *)topicModel{
-
+    
     CGSize textSize = [topicModel.text boundingRectWithSize:CGSizeMake(SCREEN_WIDTH - 20, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:15]} context:nil].size;
-    return Margin*4 + 36 + textSize.height + 35;
+    
+    return Margin*4 + 36 + textSize.height + 35 + [CenterContentView heighOfContentView:topicModel];
 }
+
+
 
 @end

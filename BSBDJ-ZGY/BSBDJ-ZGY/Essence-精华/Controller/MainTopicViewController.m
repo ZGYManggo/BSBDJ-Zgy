@@ -34,7 +34,7 @@
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"newlist";
     params[@"c"] = @"data";
-    params[@"type"] = @29;
+    params[@"type"] = @10;
     
     [ZgHttpTool toolWith:ZgGet param:params url:
      CommonURL success:^(id obj) {

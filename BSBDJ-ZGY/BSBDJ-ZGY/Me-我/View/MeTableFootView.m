@@ -69,8 +69,6 @@
 
 - (void)tappedSquareBtn:(SquareButton *)sender{
     MeSquareModel *model = sender.model;
-
-    
     
     if ([model.url hasPrefix:@"http"]) {
         MeWebViewController *VC = [[MeWebViewController alloc]init];
@@ -81,7 +79,7 @@
     }else{
         ZGLog(@"跳转到其他界面");
     }
-
+    
 }
 
 @end

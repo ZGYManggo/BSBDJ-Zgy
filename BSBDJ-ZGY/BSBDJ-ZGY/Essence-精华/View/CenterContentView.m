@@ -54,12 +54,17 @@
     }
 }
 
-+ (CGFloat)heighOfContentView:(TopicModel *)model{
+- (void)handleTapImageView:(UITapGestureRecognizer *)gesture{
+
+    
+    
+}
+
+#pragma mark - public
++ (CGFloat)heighOfContentView:(TopicModel *)model{//这部分可以写进model 也可以写进对应的cell中。我觉得这个无所谓
     if (model.type != WordTopicType) {
         // 图片高度需要根据能显示的最大宽度等比进行计算 中间内容高度 = 中间内容宽度 * 图片实际高度 / 图片实际宽度
         CGFloat height = (SCREEN_WIDTH - Margin * 2) * model.height / model.width;
-        
-        // 判断是否是大图，如果是大图则高度设置为250
         if (height >= [UIScreen mainScreen].bounds.size.height) {
             height = 250;
         }

@@ -7,6 +7,7 @@
 //
 
 #import "MainTopicViewController.h"
+#import "UIScrollView+ZgRefresh.h"
 #import "TopicModel.h"
 #import "TopicCell.h"
 @interface MainTopicViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -18,6 +19,9 @@
 @implementation MainTopicViewController
 -(void)loadView{
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, -64, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
+    [tableView addRefreshHeaderWithHandle:^{
+        [self loadNew];
+    }];
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.scrollIndicatorInsets = UIEdgeInsetsMake(35 + 64, 0, 49, 0);
@@ -25,12 +29,17 @@
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     tableView.backgroundColor = [UIColor grayColorWithRGB:178 a:1];
     self.view = tableView;
+   
     _thisTableView = tableView;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.edgesForExtendedLayout = UIRectEdgeAll;
+    [self.thisTableView.header starRefreshing];
+}
+
+- (void)loadNew{
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"newlist";
     params[@"c"] = @"data";
@@ -41,11 +50,13 @@
          if ( [obj isKindOfClass:[NSDictionary class]]) {
              self.dataArr = [TopicModel mj_objectArrayWithKeyValuesArray:obj[@"list"]];
              self.maxTime = obj[@"info"][@"maxtime"];
+             [self.thisTableView.header endRefreshing];
              [self.thisTableView reloadData];
          }
      } failure:^(NSString *errMsg) {
          NSLog(@"%@",errMsg);
      }];
+
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

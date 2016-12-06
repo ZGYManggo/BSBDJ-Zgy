@@ -12,6 +12,9 @@
 		FE0F52791DDD4B3C0044A117 /* ClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F52781DDD4B3C0044A117 /* ClearCacheCell.m */; };
 		FE0F528C1DE2A1100044A117 /* TitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F528B1DE2A1100044A117 /* TitleView.m */; };
 		FE0F528F1DE2DF4B0044A117 /* TitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F528E1DE2DF4B0044A117 /* TitleButton.m */; };
+		FE1ADACD1DF5B1E100A47CED /* BigImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1ADACC1DF5B1E100A47CED /* BigImageViewController.m */; };
+		FE1ADAD01DF6906500A47CED /* UIScrollView+ZgRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1ADACF1DF6906500A47CED /* UIScrollView+ZgRefresh.m */; };
+		FE1ADAD31DF690DE00A47CED /* ZgRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1ADAD21DF690DE00A47CED /* ZgRefreshHeader.m */; };
 		FE42BECA1DD2CA0B00944783 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BEC91DD2CA0B00944783 /* main.m */; };
 		FE42BECD1DD2CA0B00944783 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BECC1DD2CA0B00944783 /* AppDelegate.m */; };
 		FE42BED31DD2CA0B00944783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE42BED11DD2CA0B00944783 /* Main.storyboard */; };
@@ -67,6 +70,12 @@
 		FE0F528B1DE2A1100044A117 /* TitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleView.m; sourceTree = "<group>"; };
 		FE0F528D1DE2DF4B0044A117 /* TitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleButton.h; sourceTree = "<group>"; };
 		FE0F528E1DE2DF4B0044A117 /* TitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleButton.m; sourceTree = "<group>"; };
+		FE1ADACB1DF5B1E100A47CED /* BigImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigImageViewController.h; sourceTree = "<group>"; };
+		FE1ADACC1DF5B1E100A47CED /* BigImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigImageViewController.m; sourceTree = "<group>"; };
+		FE1ADACE1DF6906500A47CED /* UIScrollView+ZgRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ZgRefresh.h"; sourceTree = "<group>"; };
+		FE1ADACF1DF6906500A47CED /* UIScrollView+ZgRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ZgRefresh.m"; sourceTree = "<group>"; };
+		FE1ADAD11DF690DE00A47CED /* ZgRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZgRefreshHeader.h; sourceTree = "<group>"; };
+		FE1ADAD21DF690DE00A47CED /* ZgRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZgRefreshHeader.m; sourceTree = "<group>"; };
 		FE42BEC51DD2CA0B00944783 /* BSBDJ-ZGY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BSBDJ-ZGY.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE42BEC91DD2CA0B00944783 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE42BECB1DD2CA0B00944783 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -299,6 +308,8 @@
 				FEFE12111DE691290019E089 /* TopicCell.m */,
 				FECD2A401DEBE1160067BE3D /* CenterContentView.h */,
 				FECD2A411DEBE1160067BE3D /* CenterContentView.m */,
+				FE1ADACB1DF5B1E100A47CED /* BigImageViewController.h */,
+				FE1ADACC1DF5B1E100A47CED /* BigImageViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -449,6 +460,8 @@
 				FEFE12141DE697C10019E089 /* UIImageView+ZgyCornerRadiusExtension.m */,
 				FECD2A3D1DE8298F0067BE3D /* UIViewController+ZgyExtension.h */,
 				FECD2A3E1DE8298F0067BE3D /* UIViewController+ZgyExtension.m */,
+				FE1ADACE1DF6906500A47CED /* UIScrollView+ZgRefresh.h */,
+				FE1ADACF1DF6906500A47CED /* UIScrollView+ZgRefresh.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -493,6 +506,8 @@
 				FEA05AC31DD98F4100558F38 /* Const.m */,
 				FEA05AC51DD9917B00558F38 /* ZgHttpTool.h */,
 				FEA05AC61DD9917B00558F38 /* ZgHttpTool.m */,
+				FE1ADAD11DF690DE00A47CED /* ZgRefreshHeader.h */,
+				FE1ADAD21DF690DE00A47CED /* ZgRefreshHeader.m */,
 			);
 			name = Tool;
 			sourceTree = "<group>";
@@ -639,6 +654,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE42BF0F1DD325CF00944783 /* UIColor+ZgyExtension.m in Sources */,
+				FE1ADACD1DF5B1E100A47CED /* BigImageViewController.m in Sources */,
 				FE42BF3D1DD560BC00944783 /* RegistLoginTextField.m in Sources */,
 				FEA05AD01DD9BEDA00558F38 /* SquareButton.m in Sources */,
 				FE0F52761DDD47D90044A117 /* SettingViewController.m in Sources */,
@@ -655,8 +671,10 @@
 				FEFE120C1DE57C790019E089 /* WordTopicController.m in Sources */,
 				FE42BECD1DD2CA0B00944783 /* AppDelegate.m in Sources */,
 				FEFE12151DE697C10019E089 /* UIImageView+ZgyCornerRadiusExtension.m in Sources */,
+				FE1ADAD01DF6906500A47CED /* UIScrollView+ZgRefresh.m in Sources */,
 				FEFE12031DE57C070019E089 /* VideoTopicController.m in Sources */,
 				FE42BF311DD4713700944783 /* LoginView.m in Sources */,
+				FE1ADAD31DF690DE00A47CED /* ZgRefreshHeader.m in Sources */,
 				FEA05AD31DD9DC4500558F38 /* MeWebViewController.m in Sources */,
 				FE42BF3A1DD55D5500944783 /* UITextField+ZgyExtension.m in Sources */,
 				FE42BF1C1DD45A8B00944783 /* MeViewController.m in Sources */,

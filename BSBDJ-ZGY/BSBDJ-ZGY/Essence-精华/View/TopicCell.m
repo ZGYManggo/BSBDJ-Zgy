@@ -178,8 +178,8 @@
         make.bottom.equalTo(self.centerContentView.mas_top);
     }];
     [self.centerContentView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.and.right.equalTo(self);
-        
+        make.left.equalTo(self).offset(Margin);
+        make.right.equalTo(self).offset(-Margin);
         make.height.mas_equalTo(0);
         make.bottom.equalTo(self.line.mas_top);
     }];
